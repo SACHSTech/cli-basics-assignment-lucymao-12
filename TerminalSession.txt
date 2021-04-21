@@ -1,1 +1,51 @@
-
+~/cli-basics-assignment-lucymao-12$ pwd
+/home/runner/cli-basics-assignment-lucymao-12
+~/cli-basics-assignment-lucymao-12$ mkdir CLIBasicsFolder
+~/cli-basics-assignment-lucymao-12$ ls
+CLIBasicsFolder  README.md  TerminalSession.txt
+~/cli-basics-assignment-lucymao-12$ touch myfile.txt
+~/cli-basics-assignment-lucymao-12$ echo Lucy Mao, ICS4U >> myfile.txt
+~/cli-basics-assignment-lucymao-12$ cat myfile.txt
+Lucy Mao, ICS4U
+~/cli-basics-assignment-lucymao-12$ cp myfile.txt myfile_copy.txt
+~/cli-basics-assignment-lucymao-12$ ls CLIBasicsFolder
+~/cli-basics-assignment-lucymao-12$ ls
+CLIBasicsFolder  myfile.txt  TerminalSession.txt
+myfile_copy.txt  README.md
+~/cli-basics-assignment-lucymao-12$ ls CLIBasics Folder
+ls: cannot access 'CLIBasics': No such file or directory
+ls: cannot access 'Folder': No such file or directory
+~/cli-basics-assignment-lucymao-12$ cd CLIBasicsFolder
+~/cli-basics-assignment-lucymao-12/CLIBasicsFolder$ mv myfile.txt CLIBasicsFolder
+mv: cannot stat 'myfile.txt': No such file or directory
+~/cli-basics-assignment-lucymao-12/CLIBasicsFolder$ cd..
+bash: cd..: command not found
+~/cli-basics-assignment-lucymao-12/CLIBasicsFolder$ cd ..
+~/cli-basics-assignment-lucymao-12$ pwd
+/home/runner/cli-basics-assignment-lucymao-12
+~/cli-basics-assignment-lucymao-12$ ls
+CLIBasicsFolder  myfile.txt  TerminalSession.txt
+myfile_copy.txt  README.md
+~/cli-basics-assignment-lucymao-12$ mc lsfile.txt /CLIBasicsFolder
+bash: mc: command not found
+~/cli-basics-assignment-lucymao-12$ mv lsfile.txt /CLIBasicsFolder
+mv: cannot stat 'lsfile.txt': No such file or directory
+~/cli-basics-assignment-lucymao-12$ mv myfile.txt /CLIBasicsFolder
+mv: inter-device move failed: 'myfile.txt' to '/CLIBasicsFolder'; unable to remove target: Read-only file system
+~/cli-basics-assignment-lucymao-12$ mv myfile.txt CLIBasicsFolder
+~/cli-basics-assignment-lucymao-12$ mv myfile_copy.txt CLIBasicsFolder
+~/cli-basics-assignment-lucymao-12$ cd CLIBasicsFolder/
+~/cli-basics-assignment-lucymao-12/CLIBasicsFolder$ ls
+myfile_copy.txt  myfile.txt
+~/cli-basics-assignment-lucymao-12/CLIBasicsFolder$ mv myfile_copy.txt myfile2.txt
+~/cli-basics-assignment-lucymao-12/CLIBasicsFolder$ mv myfile2.txt ~
+~/cli-basics-assignment-lucymao-12/CLIBasicsFolder$ ls ~
+cli-basics-assignment-lucymao-12  myfile2.txt  _test_runner.py
+~/cli-basics-assignment-lucymao-12/CLIBasicsFolder$ cd ..
+~/cli-basics-assignment-lucymao-12$ ls
+CLIBasicsFolder  README.md  TerminalSession.txt
+~/cli-basics-assignment-lucymao-12$ rm CLIBasicsFolder/myfile.txt 
+~/cli-basics-assignment-lucymao-12$ rm -r CLIBasicsFolder/
+~/cli-basics-assignment-lucymao-12$ ls ~
+cli-basics-assignment-lucymao-12  myfile2.txt  _test_runner.py
+~/cli-basics-assignment-lucymao-12$ 
